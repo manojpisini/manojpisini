@@ -1,159 +1,74 @@
-<!-- 
-  🧠 GitHub Profile README for Manoj Pisini
-  Modern Website-Style Layout (HTML + Markdown Hybrid)
-  Compatible with GitHub Flavored Markdown (GFM)
--->
-<div align="center">
-  
-⚠️ **New GitHub Profile Notice**  
-<sub>My earlier GitHub account was deleted during a data migration. This profile now contains my complete and updated work portfolio.</sub>
+> ⚠️ **Note:** This is my new GitHub profile.  
+> My previous account was deleted during a migration — all active repositories and projects are now consolidated here.  
 
-</div>
+---
 
-
-<h1 align="center">👋 Hey, I'm <span style="color:#00BFFF;">Manoj Pisini</span></h1>
+<h1 align="center">🖤 Manoj Pisini</h1>
 
 <p align="center">
-💡 <strong>Multi-Domain Engineer</strong> | Systems • UI/UX • DevOps • Databases  
-<br/>
-<em>Engineering across layers — from C to UX.</em>
+<em>Multi-Domain Engineer | Systems • UI/UX • DevOps • Databases</em>  
+<br>
+<sub>Engineering across layers — from C to UX.</sub>
 </p>
 
 ---
 
-## 🧠 Languages
-<p align="center">
-<img src="https://img.shields.io/badge/-C-00599C?logo=c&logoColor=white"/>
-<img src="https://img.shields.io/badge/-C++-00599C?logo=cplusplus&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Rust-000000?logo=rust&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black"/>
-<img src="https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Java-007396?logo=java&logoColor=white"/>
-<img src="https://img.shields.io/badge/-.NET-512BD4?logo=dotnet&logoColor=white"/>
-</p>
+```javascript
+const manoj = {
+    pronouns: "He" | "Him",
+    role: "Multi-Domain Engineer",
+    expertise: ["Systems", "UI/UX", "DevOps", "Database Design"],
+    languages: ["C", "C++", "Rust", "Python", "Java", "JavaScript", "TypeScript", ".NET"],
+
+    tech: {
+        frontEnd: ["React", "Next.js", "Angular", "TailwindCSS", "Material UI", "shadcn/ui"],
+        backEnd: ["Django", "Flask", "Node.js", "Express", "FastAPI"],
+        devOps: ["Docker", "Kubernetes", "CI/CD", "GitHub Actions", "Nginx", "Linux", "AWS", "GCP"],
+        databases: ["PostgreSQL", "MongoDB", "SQLite", "MySQL", "Redis"],
+        uiux: ["Figma", "Adobe XD", "Canva", "Blender"],
+        ai: ["GPT", "Vectorization", "LLM Integrations"]
+    },
+
+    currentFocus: "Building adaptive, scalable, and minimalistic software systems.",
+    funFact: "I debug faster with a coffee ☕ in hand!"
+};
+```
 
 ---
 
-## ⚙️ Frameworks & Libraries
-<p align="center">
-<img src="https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black"/>
-<img src="https://img.shields.io/badge/-Next.js-000000?logo=next.js&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Angular-DD0031?logo=angular&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Django-092E20?logo=django&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Flask-000000?logo=flask&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Express-000000?logo=express&logoColor=white"/>
-<img src="https://img.shields.io/badge/-TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Material_UI-0081CB?logo=mui&logoColor=white"/>
-<img src="https://img.shields.io/badge/-shadcn/ui-000000?logo=shadcnui&logoColor=white"/>
-</p>
+| **Category** | **Stack** |
+|---------------|------------|
+| **Languages** | ![C](https://img.shields.io/badge/-C-555555?logo=c&logoColor=white) ![C++](https://img.shields.io/badge/-C++-555555?logo=cplusplus&logoColor=white) ![Rust](https://img.shields.io/badge/-Rust-555555?logo=rust&logoColor=white) ![Python](https://img.shields.io/badge/-Python-555555?logo=python&logoColor=white) ![Java](https://img.shields.io/badge/-Java-555555?logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/-JavaScript-555555?logo=javascript&logoColor=white) ![TypeScript](https://img.shields.io/badge/-TypeScript-555555?logo=typescript&logoColor=white) ![.NET](https://img.shields.io/badge/-.NET-555555?logo=dotnet&logoColor=white) |
+| **Frontend** | ![React](https://img.shields.io/badge/-React-555555?logo=react&logoColor=white) ![Next.js](https://img.shields.io/badge/-Next.js-555555?logo=next.js&logoColor=white) ![Angular](https://img.shields.io/badge/-Angular-555555?logo=angular&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-555555?logo=tailwindcss&logoColor=white) ![Material UI](https://img.shields.io/badge/-Material%20UI-555555?logo=mui&logoColor=white) ![shadcn/ui](https://img.shields.io/badge/-shadcn/ui-555555?logo=shadcnui&logoColor=white) |
+| **Backend** | ![Django](https://img.shields.io/badge/-Django-555555?logo=django&logoColor=white) ![Flask](https://img.shields.io/badge/-Flask-555555?logo=flask&logoColor=white) ![Node.js](https://img.shields.io/badge/-Node.js-555555?logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/-Express-555555?logo=express&logoColor=white) ![FastAPI](https://img.shields.io/badge/-FastAPI-555555?logo=fastapi&logoColor=white) |
+| **DevOps / Cloud** | ![Docker](https://img.shields.io/badge/-Docker-555555?logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/-Kubernetes-555555?logo=kubernetes&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/-GitHub%20Actions-555555?logo=githubactions&logoColor=white) ![CI/CD](https://img.shields.io/badge/-CI/CD-555555?logo=githubactions&logoColor=white) ![AWS](https://img.shields.io/badge/-AWS-555555?logo=amazon-aws&logoColor=white) ![GCP](https://img.shields.io/badge/-GCP-555555?logo=google-cloud&logoColor=white) ![Linux](https://img.shields.io/badge/-Linux-555555?logo=linux&logoColor=white) |
+| **Databases** | ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-555555?logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/-MongoDB-555555?logo=mongodb&logoColor=white) ![SQLite](https://img.shields.io/badge/-SQLite-555555?logo=sqlite&logoColor=white) ![MySQL](https://img.shields.io/badge/-MySQL-555555?logo=mysql&logoColor=white) ![Redis](https://img.shields.io/badge/-Redis-555555?logo=redis&logoColor=white) |
+| **UI / UX** | ![Figma](https://img.shields.io/badge/-Figma-555555?logo=figma&logoColor=white) ![Adobe XD](https://img.shields.io/badge/-Adobe%20XD-555555?logo=adobexd&logoColor=white) ![Canva](https://img.shields.io/badge/-Canva-555555?logo=canva&logoColor=white) ![Blender](https://img.shields.io/badge/-Blender-555555?logo=blender&logoColor=white) |
+| **AI / ML** | ![GPT](https://img.shields.io/badge/-GPT-555555?logo=openai&logoColor=white) ![Vectorization](https://img.shields.io/badge/-Vectorization-555555?logo=python&logoColor=white) ![LLM](https://img.shields.io/badge/-LLM%20Integration-555555?logo=openaigym&logoColor=white) |
 
 ---
 
-## ☁️ DevOps & Cloud
-<p align="center">
-<img src="https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Kubernetes-326CE5?logo=kubernetes&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Linux-FCC624?logo=linux&logoColor=black"/>
-<img src="https://img.shields.io/badge/-AWS-232F3E?logo=amazon-aws&logoColor=white"/>
-<img src="https://img.shields.io/badge/-GCP-4285F4?logo=google-cloud&logoColor=white"/>
-<img src="https://img.shields.io/badge/-CI/CD-4285F4?logo=githubactions&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Shell_Scripting-4EAA25?logo=gnubash&logoColor=white"/>
-</p>
-
----
-
-## 🗄️ Databases
-<p align="center">
-<img src="https://img.shields.io/badge/-SQL-4479A1?logo=mysql&logoColor=white"/>
-<img src="https://img.shields.io/badge/-PostgreSQL-336791?logo=postgresql&logoColor=white"/>
-<img src="https://img.shields.io/badge/-MongoDB-47A248?logo=mongodb&logoColor=white"/>
-<img src="https://img.shields.io/badge/-SQLite-003B57?logo=sqlite&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Redis-DC382D?logo=redis&logoColor=white"/>
-</p>
-
----
-
-## 🎨 UI/UX & Design
-<p align="center">
-<img src="https://img.shields.io/badge/-Figma-F24E1E?logo=figma&logoColor=white"/>
-<img src="https://img.shields.io/badge/-AdobeXD-FF61F6?logo=adobexd&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Canva-00C4CC?logo=canva&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Blender-F5792A?logo=blender&logoColor=white"/>
-<img src="https://img.shields.io/badge/-TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white"/>
-<img src="https://img.shields.io/badge/-Material_UI-0081CB?logo=mui&logoColor=white"/>
-<img src="https://img.shields.io/badge/-shadcn/ui-000000?logo=shadcnui&logoColor=white"/>
-</p>
-
----
-
-## 🧩 Concepts & Practices
-<p align="center">
-🏗️ RESTful APIs • 🧠 Machine Learning • 🔁 Agile / Scrum  
-🧩 TDD • ⚙️ OOP • 🎨 Cross-platform UI • ☁️ Cloud Infrastructure
-</p>
-
----
-
-## 🧠 Featured Domains
-<table align="center">
-<tr>
-<td align="center" width="50%">
-  
-### ⚙️ Systems Engineering  
-Algorithm design, performance optimization, embedded logic  
-
-</td>
-<td align="center" width="50%">
-  
-### 🎨 UI/UX & Front-End  
-Accessible interfaces, component systems, design architecture  
-
-</td>
-</tr>
-<tr>
-<td align="center" width="50%">
-  
-### ☁️ DevOps Automation  
-Dockerized deployments, CI/CD pipelines, AWS & GCP  
-
-</td>
-<td align="center" width="50%">
-  
-### 🗄️ Database Systems  
-SQL schema design, indexing, and distributed data storage  
-
-</td>
-</tr>
-</table>
-
----
-
-## 📈 GitHub Stats & Activity
 <div align="center">
 
-![Manoj's GitHub stats](https://github-readme-stats.vercel.app/api?username=manojpisini&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)  
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=manojpisini&layout=compact&theme=tokyonight&hide_border=true)  
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=manojpisini&theme=tokyonight&hide_border=true)  
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=manojpisini&theme=tokyo-night&hide_border=true&area=true)
+```text
+          ░█▀▀█ ▀▀█▀▀ ░█▀▀▀█ ░█▀▀█ ▀▀█▀▀ ▀▀█▀▀ ░█▀▀█ ░█▀▀▀█ 
+          ░█─── ─░█── ░█──░█ ░█──█ ─░█── ─░█── ░█─── ░█──░█ 
+          ░█▄▄█ ─░█── ░█▄▄▄█ ░█▄▄█ ─░█── ─░█── ░█▄▄█ ░█▄▄▄█ 
+```
+
+![Manoj's ASCII Stats](https://github-readme-stats.vercel.app/api?username=manojpisini&show_icons=true&theme=graywhite&hide_border=true&count_private=true)  
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=manojpisini&layout=compact&theme=graywhite&hide_border=true)  
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=manojpisini&theme=graywhite&hide_border=true)
 
 </div>
 
 ---
 
-## 🌐 Connect
 <p align="center">
-<a href="mailto:manoj.pisini@gmail.com"><img src="https://img.shields.io/badge/-Gmail-D14836?logo=gmail&logoColor=white"/></a>
-<a href="https://linkedin.com/in/manojpisini"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?logo=linkedin&logoColor=white"/></a>
-<a href="https://manojpisini.dev"><img src="https://img.shields.io/badge/-Portfolio-000000?logo=vercel&logoColor=white"/></a>
+<a href="mailto:manoj.pisini@gmail.com"><img src="https://img.shields.io/badge/-Gmail-555555?logo=gmail&logoColor=white"/></a>
+<a href="https://linkedin.com/in/manojpisini"><img src="https://img.shields.io/badge/-LinkedIn-444444?logo=linkedin&logoColor=white"/></a>
+<a href="https://manojpisini.dev"><img src="https://img.shields.io/badge/-Portfolio-333333?logo=vercel&logoColor=white"/></a>
 </p>
-
----
-
-<h3 align="center">⭐ <em>“Engineering across layers — from C to UX.”</em> ⭐</h3>
-
-<p align="center">
-<img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" alt="GitHub Snake Animation"/>
-</p>
+<h3 align="center">
+🖤 <em>“Engineering across layers — from C to UX.”</em>
+</h3>
