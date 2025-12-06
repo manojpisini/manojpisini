@@ -15,7 +15,6 @@
 
 ```javascript
 const manoj = {
-    pronouns: "He" | "Him",
     role: "Multi-Domain Engineer",
     expertise: ["Systems", "UI/UX", "DevOps", "Database Design"],
     languages: ["C", "C++", "Rust", "Python", "Java", "JavaScript", "TypeScript", ".NET"],
