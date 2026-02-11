@@ -44,7 +44,26 @@ const manoj = {
 | **AI / ML** | ![GPT](https://img.shields.io/badge/-GPT-555555?logo=openai&logoColor=white) ![Vectorization](https://img.shields.io/badge/-Vectorization-555555?logo=python&logoColor=white) ![LLM](https://img.shields.io/badge/-LLM%20Integration-555555?logo=openaigym&logoColor=white) |
 
 ---
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=manojpisini&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=F0C832&icon_color=F0C832" height="170" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=manojpisini&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=F0C832" height="170" />
+</div>
 
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=manojpisini&theme=tokyonight&hide_border=true&background=0d1117&stroke=F0C832&ring=F0C832&fire=F0C832" width="49%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=manojpisini&theme=tokyonight" width="49%" />
+</div>
+
+### 🐍 Contribution Journey
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/manojpisini/manojpisini/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/manojpisini/manojpisini/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/manojpisini/manojpisini/output/github-contribution-grid-snake.svg">
+</picture>
+---
+
+### 🏆 Achievement Showcase
+[![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=manojpisini&theme=tokyonight&no-bg=true&margin-w=15&column=4)](https://github.com/ryo-ma/github-profile-trophy)
 
 ---
 
