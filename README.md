@@ -1,14 +1,23 @@
-
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=ffffff&height=200&section=header&text=MANOJ%20PISINI&fontSize=70&animation=fadeIn&fontAlignY=35&desc=Multi-Domain%20Engineer&descAlignY=52&descSize=20" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0D1117&height=250&section=header&text=ACCESS_GRANTED&fontSize=60&animation=twinkling&fontColor=00FF41&desc=PISINI_MANOJ_OS_V2.06&descAlignY=65&descSize=20" width="100%"/>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=F0C832&center=true&vCenter=true&width=435&lines=Multi-Domain+Engineer;Systems+%E2%80%A2+UI%2FUX+%E2%80%A2+DevOps;Engineering+from+C+to+UX;Rust+TUI+Enthusiast" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Courier+Prime&weight=700&size=24&pause=500&color=00FF41&center=true&vCenter=true&width=600&lines=%3E_INITIALIZING_SYSTEMS...;%3E_LOADING_RUST_RUNTIME...;%3E_MOUNTING_UI_UX_LAYERS...;%3E_ENGINEERING_FROM_C_TO_UX;%3E_COFFEE_LEVEL_OPTIMAL_☕" alt="Terminal Typing" />
 </p>
 
+<pre align="center">
+<font color="#00FF41">
+███╗   ███╗ █████╗ ███╗   ██╗ ██████╗      ██╗    ██████╗ ██╗███████╗██╗███╗   ██╗██╗
+████╗ ████║██╔══██╗████╗  ██║██╔═══██╗     ██║    ██╔══██╗██║██╔════╝██║████╗  ██║██║
+██╔████╔██║███████║██╔██╗ ██║██║   ██║     ██║    ██████╔╝██║███████╗██║██╔██╗ ██║██║
+██║╚██╔╝██║██╔══██║██║╚██╗██║██║   ██║██   ██║    ██╔═══╝ ██║╚════██║██║██║╚██╗██║██║
+██║ ╚═╝ ██║██║  ██║██║ ╚████║╚██████╔╝╚██████╔╝   ██║     ██║███████║██║██║ ╚████║██║
+╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝    ╚═╝     ╚═╝╚══════╝╚═╝╚═╝  ╚═══╝╚═╝
+</font>
+</pre>
+
 ---
+
+### 🖥️ SYSTEM CONFIGURATION
 
 ```javascript
 const manoj = {
@@ -28,10 +37,14 @@ const manoj = {
     currentFocus: "Building adaptive, scalable, and minimalistic software systems.",
     funFact: "I debug faster with a coffee ☕ in hand!"
 };
+
 ```
 
 ---
-### 🛠️ Tech Stack & Expertise
+
+<div align="center">
+
+### 🛠️ FULL STACK CAPABILITIES
 
 | **Category** | **Stack** |
 |---------------|------------|
@@ -44,43 +57,47 @@ const manoj = {
 | **AI / ML** | ![GPT](https://img.shields.io/badge/-GPT-555555?logo=openai&logoColor=white) ![Vectorization](https://img.shields.io/badge/-Vectorization-555555?logo=python&logoColor=white) ![LLM](https://img.shields.io/badge/-LLM%20Integration-555555?logo=openaigym&logoColor=white) |
 
 ---
-### 📊 Technical Ecosystem
+
+### 📟 TELEMETRY & ANALYTICS
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=manojpisini&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=F0C832&icon_color=F0C832" height="150" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=manojpisini&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=F0C832" height="150" />
+<img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api%3Fusername%3Dmanojpisini%26show_icons%3Dtrue%26theme%3Dmatrix%26hide_border%3Dtrue%26bg_color%3D0D1117%26title_color%3D00FF41%26icon_color%3D00FF41%26count_private%3Dtrue" height="180" />
+<img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api/top-langs/%3Fusername%3Dmanojpisini%26layout%3Dcompact%26theme%3Dmatrix%26hide_border%3Dtrue%26bg_color%3D0D1117%26title_color%3D00FF41%26count_private%3Dtrue" height="180" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=manojpisini&theme=tokyonight&hide_border=true&background=0d1117&stroke=F0C832&ring=F0C832&fire=F0C832" width="49%" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=manojpisini&theme=tokyonight" width="48%" />
+<img src="https://www.google.com/search?q=https://github-readme-streak-stats.herokuapp.com/%3Fuser%3Dmanojpisini%26theme%3Dmatrix%26hide_border%3Dtrue%26background%3D0D1117%26stroke%3D00FF41%26ring%3D00FF41%26fire%3D00FF41" width="100%" />
 </p>
 
 ---
 
-### 🐍 Contribution Journey
+### 🐍 CONTRIBUTION_SCANLINE
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/manojpisini/manojpisini/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/manojpisini/manojpisini/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/manojpisini/manojpisini/output/github-contribution-grid-snake.svg">
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/manojpisini/manojpisini/output/github-contribution-grid-snake-dark.svg">
+<img alt="Snake Animation" src="https://raw.githubusercontent.com/manojpisini/manojpisini/output/github-contribution-grid-snake.svg">
 </picture>
 
 ---
 
-### 🏆 Achievement Showcase
+### 🏆 SYSTEM_ACHIEVEMENTS
+
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=manojpisini&theme=tokyonight&no-bg=true&margin-w=15&column=4" />
+<img src="https://www.google.com/search?q=https://github-profile-trophy.vercel.app/%3Fusername%3Dmanojpisini%26theme%3Dmatrix%26no-bg%3Dtrue%26margin-w%3D15%26column%3D4" />
 </p>
 
 ---
 
 <p align="center">
-<a href="mailto:manoj.pisini@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-<a href="https://linkedin.com/in/manojpisini"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-<a href="https://manojpisini.dev"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white"/></a>
+<img src="https://www.google.com/search?q=https://komarev.com/ghpvc/%3Fusername%3Dmanojpisini%26color%3D00FF41%26style%3Dfor-the-badge%26label%3DACCESS_COUNT" />
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=manojpisini&color=F0C832&style=flat-square&label=PROFILE+VIEWS" />
+<a href="mailto:manoj.pisini@gmail.com"><img src="https://www.google.com/search?q=https://img.shields.io/badge/--TERMINATE_SESSION--%3Fstyle%3Dfor-the-badge%26logo%3Dgmail%26logoColor%3Dwhite%26color%3DD14836"/></a>
+<a href="https://linkedin.com/in/manojpisini"><img src="https://www.google.com/search?q=https://img.shields.io/badge/--LINKEDIN--%3Fstyle%3Dfor-the-badge%26logo%3Dlinkedin%26logoColor%3Dwhite%26color%3D0077B5"/></a>
+<a href="https://manojpisini.dev"><img src="https://www.google.com/search?q=https://img.shields.io/badge/--PORTFOLIO--%3Fstyle%3Dfor-the-badge%26logo%3Dvercel%26logoColor%3Dwhite%26color%3D000000"/></a>
 </p>
+
 </div>
+
+```
