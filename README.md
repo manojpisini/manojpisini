@@ -1,6 +1,7 @@
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0D1117&height=250&section=header&text=MANOJ_PISINI&fontSize=60&animation=twinkling&fontColor=00FF41&desc=MANOJPISINI_GITHUB_V2.0&descAlignY=65&descSize=16" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=141414&height=250&section=header&text=SYSTEM_READY&fontSize=60&animation=twinkling&fontColor=4C8220&desc=GRAPHITE_GREEN_OS_V2.06&descAlignY=65&descSize=20" width="100%"/>
+
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=24&pause=500&color=00FF41&center=true&vCenter=true&width=600&lines=%3E_INITIALIZING_SYSTEMS...;%3E_LOADING_RUST_RUNTIME...;%3E_MOUNTING_UI_UX_LAYERS...;%3E_ENGINEERING_FROM_C_TO_UX;%3E_COFFEE_LEVEL_OPTIMAL_%E2%98%95" alt="Terminal Typing" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=24&pause=500&color=4C8220&center=true&vCenter=true&width=600&lines=%3E_INITIALIZING_GRAPHITE_KERNEL...;%3E_LOADING_RUST_RUNTIME...;%3E_MOUNTING_MOSS_GREEN_UI...;%3E_ENGINEERING_FROM_C_TO_UX;%3E_COFFEE_LEVEL_OPTIMAL_%E2%98%95" alt="Terminal Typing" />
 </p>
 
 ---
