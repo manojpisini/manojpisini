@@ -10,8 +10,6 @@
 
 ---
 
----
-
 ```javascript
 const manoj = {
     role: "Multi-Domain Engineer",
@@ -33,6 +31,7 @@ const manoj = {
 ```
 
 ---
+### 🛠️ Tech Stack & Expertise
 
 | **Category** | **Stack** |
 |---------------|------------|
@@ -56,10 +55,11 @@ const manoj = {
 ---
 
 <p align="center">
-<a href="mailto:manoj.pisini@gmail.com"><img src="https://img.shields.io/badge/-Gmail-555555?logo=gmail&logoColor=white"/></a>
-<a href="https://linkedin.com/in/manojpisini"><img src="https://img.shields.io/badge/-LinkedIn-444444?logo=linkedin&logoColor=white"/></a>
-<a href="https://manojpisini.dev"><img src="https://img.shields.io/badge/-Portfolio-333333?logo=vercel&logoColor=white"/></a>
+<a href="mailto:manoj.pisini@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://linkedin.com/in/manojpisini"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="https://manojpisini.dev"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white"/></a>
 </p>
-<h3 align="center">
-🖤 <em>“Engineering across layers — from C to UX.”</em>
-</h3>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=manojpisini&color=F0C832&style=flat-square&label=PROFILE+VIEWS" />
+</p>
