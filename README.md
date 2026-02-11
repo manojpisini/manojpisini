@@ -46,12 +46,6 @@ const manoj = {
 ---
 
 
-![Manoj's ASCII Stats](https://github-readme-stats.vercel.app/api?username=manojpisini&show_icons=true&theme=graywhite&hide_border=true&count_private=true)  
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=manojpisini&layout=compact&theme=graywhite&hide_border=true)  
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=manojpisini&theme=graywhite&hide_border=true)
-
-</div>
-
 ---
 
 <p align="center">
@@ -63,3 +57,4 @@ const manoj = {
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=manojpisini&color=F0C832&style=flat-square&label=PROFILE+VIEWS" />
 </p>
+</div>
