@@ -2,16 +2,7 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0D1E50&height=200&section=header&text=MANOJ%20PISINI&fontSize=70&animation=fadeIn&fontAlignY=35&desc=Multi-Domain%20Engineer&descAlignY=52&descSize=20" width="100%"/>
-
-<pre>
-███╗   ███╗ █████╗ ███╗   ██╗ ██████╗      ██╗    ██████╗ ██╗███████╗██╗███╗   ██╗██╗
-████╗ ████║██╔══██╗████╗  ██║██╔═══██╗     ██║    ██╔══██╗██║██╔════╝██║████╗  ██║██║
-██╔████╔██║███████║██╔██╗ ██║██║   ██║     ██║    ██████╔╝██║███████╗██║██╔██╗ ██║██║
-██║╚██╔╝██║██╔══██║██║╚██╗██║██║   ██║██   ██║    ██╔═══╝ ██║╚════██║██║██║╚██╗██║██║
-██║ ╚═╝ ██║██║  ██║██║ ╚████║╚██████╔╝╚██████╔╝    ██║     ██║███████║██║██║ ╚████║██║
-╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝     ╚═╝     ╚═╝╚══════╝╚═╝╚═╝  ╚═══╝╚═╝
-</pre>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=ffffff&height=200&section=header&text=MANOJ%20PISINI&fontSize=70&animation=fadeIn&fontAlignY=35&desc=Multi-Domain%20Engineer&descAlignY=52&descSize=20" width="100%"/>
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=F0C832&center=true&vCenter=true&width=435&lines=Multi-Domain+Engineer;Systems+%E2%80%A2+UI%2FUX+%E2%80%A2+DevOps;Engineering+from+C+to+UX;Rust+TUI+Enthusiast" alt="Typing SVG" />
