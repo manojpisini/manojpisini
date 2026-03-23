@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:18181B,100:27272A&height=120&section=header&text=Manoj+Pisini&fontSize=24" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:18181B,100:27272A&height=120&section=header&text=Manoj+Pisini&fontSize=32&fontColor=ffffff&fontAlignY=42&fontAlign=50" />
 
 **Full-Stack · Systems · Embedded · ML · DevOps**
 
