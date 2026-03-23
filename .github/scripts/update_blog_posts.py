@@ -1,6 +1,7 @@
 import feedparser
 import re
 import requests
+import urllib.parse
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 
@@ -83,14 +84,11 @@ def fetch_github_blog_posts():
         resp = requests.get(GITHUB_BLOG["manifest_url"], timeout=10)
         resp.raise_for_status()
         entries = resp.json()
-
         for entry in entries:
-            # Build post URL: base_url + filename without .md extension
             slug = entry.get("file", "").replace(".md", "")
             url = f"{GITHUB_BLOG['base_url']}{slug}"
             date = parse_manifest_date(entry.get("date", ""))
             title = entry.get("title", "Untitled").strip()
-
             posts.append({
                 "title": title,
                 "url": url,
@@ -110,19 +108,46 @@ def fetch_all_posts():
     return posts[:MAX_POSTS]
 
 
+def build_banner_url(title, source, date_str):
+    # Truncate long titles so they fit neatly in the banner
+    short_title = title if len(title) <= 44 else title[:41] + "..."
+    desc = f"{source}  ·  {date_str}"
+    params = {
+        "type": "waving",
+        "color": "0:18181B,100:27272A",
+        "height": "130",
+        "section": "header",
+        "text": short_title,
+        "fontSize": "24",
+        "fontColor": "ffffff",
+        "fontAlignY": "42",
+        "fontAlign": "50",
+        "desc": desc,
+        "descSize": "14",
+        "descColor": "a1a1aa",
+        "descAlignY": "65",
+        "descAlign": "50",
+    }
+    return "https://capsule-render.vercel.app/api?" + urllib.parse.urlencode(params)
+
+
 def build_markdown(posts):
     if not posts:
         return "> _No posts yet. Check back soon!_\n"
 
     blocks = []
     for p in posts:
+        banner_url = build_banner_url(p["title"], p["source_name"], p["date_str"])
         block = (
-            f"> **[{p['title']}]({p['url']})**  \n"
-            f"> {p['source_badge']} &nbsp; `{p['date_str']}`"
+            # Full-width clickable banner — title + platform + date baked in
+            f"[![{p['title']}]({banner_url})]({p['url']})\n"
+            # Blockquote row below banner: badge · date · read link
+            f"> {p['source_badge']} &nbsp; `{p['date_str']}` &nbsp; &nbsp; **[Read →]({p['url']})**"
         )
         blocks.append(block)
 
-    return "\n\n".join(blocks) + "\n"
+    # <br> gives breathing room between posts without a heavy divider line
+    return "\n\n<br>\n\n".join(blocks) + "\n"
 
 
 def update_readme(content):
