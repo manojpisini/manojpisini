@@ -39,6 +39,10 @@ GITHUB_BLOG = {
 
 MAX_POSTS = 5
 
+# Fixed banner dimensions rendered in the README
+BANNER_WIDTH  = "830"
+BANNER_HEIGHT = "200"
+
 
 def parse_rss_date(entry):
     for field in ("published", "updated"):
@@ -58,65 +62,36 @@ def parse_manifest_date(date_str):
         return datetime.min.replace(tzinfo=timezone.utc)
 
 
-def fetch_rss_posts():
-    posts = []
-    for source in RSS_FEEDS:
-        try:
-            feed = feedparser.parse(source["url"])
-            for entry in feed.entries:
-                date = parse_rss_date(entry)
-                posts.append({
-                    "title": entry.get("title", "Untitled").strip(),
-                    "url": entry.get("link", "#"),
-                    "date": date,
-                    "date_str": date.strftime("%b %d, %Y"),
-                    "source_name": source["name"],
-                    "source_badge": source["badge"],
-                })
-        except Exception as e:
-            print(f"Failed to fetch {source['name']}: {e}")
-    return posts
+def get_rss_banner(entry):
+    """Try to extract a cover/thumbnail image from an RSS entry."""
+    # 1. media:thumbnail or media:content (Medium, Substack, Dev.to)
+    media = entry.get("media_thumbnail") or entry.get("media_content")
+    if media and isinstance(media, list) and media[0].get("url"):
+        return media[0]["url"]
+    # 2. enclosures
+    for enc in entry.get("enclosures", []):
+        if enc.get("type", "").startswith("image/"):
+            return enc.get("url")
+    # 3. First <img> in summary or content body
+    for field in ("summary", "content"):
+        val = entry.get(field)
+        if isinstance(val, list):
+            val = val[0].get("value", "")
+        if val:
+            match = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', val)
+            if match:
+                return match.group(1)
+    return None
 
 
-def fetch_github_blog_posts():
-    posts = []
-    try:
-        resp = requests.get(GITHUB_BLOG["manifest_url"], timeout=10)
-        resp.raise_for_status()
-        entries = resp.json()
-        for entry in entries:
-            slug = entry.get("file", "").replace(".md", "")
-            url = f"{GITHUB_BLOG['base_url']}{slug}"
-            date = parse_manifest_date(entry.get("date", ""))
-            title = entry.get("title", "Untitled").strip()
-            posts.append({
-                "title": title,
-                "url": url,
-                "date": date,
-                "date_str": date.strftime("%b %d, %Y"),
-                "source_name": GITHUB_BLOG["name"],
-                "source_badge": GITHUB_BLOG["badge"],
-            })
-    except Exception as e:
-        print(f"Failed to fetch GitHub Blog manifest: {e}")
-    return posts
-
-
-def fetch_all_posts():
-    posts = fetch_rss_posts() + fetch_github_blog_posts()
-    posts.sort(key=lambda p: p["date"], reverse=True)
-    return posts[:MAX_POSTS]
-
-
-def build_banner_url(title, source, date_str):
-    # Truncate long titles so they fit neatly in the banner
+def build_capsule_banner(title, source, date_str):
+    """Fallback: flat rectangle AMOLED banner via capsule-render."""
     short_title = title if len(title) <= 44 else title[:41] + "..."
     desc = f"{source}  ·  {date_str}"
     params = {
-        "type": "waving",
+        "type": "rect",
         "color": "0:18181B,100:27272A",
-        "height": "130",
-        "section": "header",
+        "height": BANNER_HEIGHT,
         "text": short_title,
         "fontSize": "24",
         "fontColor": "ffffff",
@@ -131,23 +106,97 @@ def build_banner_url(title, source, date_str):
     return "https://capsule-render.vercel.app/api?" + urllib.parse.urlencode(params)
 
 
+def fetch_rss_posts():
+    posts = []
+    for source in RSS_FEEDS:
+        try:
+            feed = feedparser.parse(source["url"])
+            for entry in feed.entries:
+                date = parse_rss_date(entry)
+                posts.append({
+                    "title":       entry.get("title", "Untitled").strip(),
+                    "url":         entry.get("link", "#"),
+                    "date":        date,
+                    "date_str":    date.strftime("%b %d, %Y"),
+                    "source_name": source["name"],
+                    "source_badge": source["badge"],
+                    "banner":      get_rss_banner(entry),
+                })
+        except Exception as e:
+            print(f"Failed to fetch {source['name']}: {e}")
+    return posts
+
+
+def fetch_github_blog_posts():
+    posts = []
+    try:
+        resp = requests.get(GITHUB_BLOG["manifest_url"], timeout=10)
+        resp.raise_for_status()
+        entries = resp.json()
+        for entry in entries:
+            slug  = entry.get("file", "").replace(".md", "")
+            url   = f"{GITHUB_BLOG['base_url']}{slug}"
+            date  = parse_manifest_date(entry.get("date", ""))
+            title = entry.get("title", "Untitled").strip()
+            posts.append({
+                "title":        title,
+                "url":          url,
+                "date":         date,
+                "date_str":     date.strftime("%b %d, %Y"),
+                "source_name":  GITHUB_BLOG["name"],
+                "source_badge": GITHUB_BLOG["badge"],
+                # Use "banner" key in manifest.json if present
+                "banner":       entry.get("banner") or None,
+            })
+    except Exception as e:
+        print(f"Failed to fetch GitHub Blog manifest: {e}")
+    return posts
+
+
+def fetch_all_posts():
+    posts = fetch_rss_posts() + fetch_github_blog_posts()
+    posts.sort(key=lambda p: p["date"], reverse=True)
+    return posts[:MAX_POSTS]
+
+
 def build_markdown(posts):
     if not posts:
         return "> _No posts yet. Check back soon!_\n"
 
     blocks = []
     for p in posts:
-        banner_url = build_banner_url(p["title"], p["source_name"], p["date_str"])
-        block = (
-            # Full-width clickable banner — title + platform + date baked in
-            f"[![{p['title']}]({banner_url})]({p['url']})\n"
-            # Blockquote row below banner: badge · date · read link
-            f"> {p['source_badge']} &nbsp; `{p['date_str']}` &nbsp; &nbsp; **[Read →]({p['url']})**"
-        )
+        title = p["title"]
+        url   = p["url"]
+        badge = p["source_badge"]
+        date  = p["date_str"]
+
+        if p.get("banner"):
+            # Post's own cover image — fixed width + height so all banners
+            # are uniform regardless of the original image dimensions.
+            # object-fit:cover crops rather than squishes.
+            img_tag = (
+                f'<img src="{p["banner"]}" '
+                f'width="{BANNER_WIDTH}" height="{BANNER_HEIGHT}" '
+                f'style="object-fit:cover;border-radius:6px" '
+                f'alt="{title}">'
+            )
+        else:
+            # Capsule-render fallback — capsule already outputs at the
+            # correct height, so no object-fit needed.
+            capsule_url = build_capsule_banner(title, p["source_name"], date)
+            img_tag = (
+                f'<img src="{capsule_url}" '
+                f'width="{BANNER_WIDTH}" height="{BANNER_HEIGHT}" '
+                f'alt="{title}">'
+            )
+
+        # Wrap image in a link so clicking opens the post
+        banner_block = f'<a href="{url}">{img_tag}</a>'
+
+        block = banner_block
         blocks.append(block)
 
-    # <br> gives breathing room between posts without a heavy divider line
-    return "\n\n<br>\n\n".join(blocks) + "\n"
+    return "\n\n&nbsp;\n\n".join(blocks) + "\n"
 
 
 def update_readme(content):
@@ -175,6 +224,7 @@ if __name__ == "__main__":
     posts = fetch_all_posts()
     print(f"Fetched {len(posts)} posts total.")
     for p in posts:
-        print(f"  [{p['source_name']}] {p['title']} ({p['date_str']})")
+        src = "post banner" if p.get("banner") else "capsule-render"
+        print(f"  [{p['source_name']}] {p['title']} ({p['date_str']}) — {src}")
     markdown = build_markdown(posts)
     update_readme(markdown)
