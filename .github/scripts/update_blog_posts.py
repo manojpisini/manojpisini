@@ -40,7 +40,7 @@ GITHUB_BLOG = {
 MAX_POSTS = 5
 
 # Fixed banner dimensions rendered in the README
-BANNER_WIDTH  = "830"
+BANNER_WIDTH  = "100%"
 BANNER_HEIGHT = "200"
 
 
