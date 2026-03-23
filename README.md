@@ -13,6 +13,7 @@
 [![Hashnode](https://img.shields.io/badge/Hashnode-18181B?style=flat-square&logo=hashnode&logoColor=2962FF)](https://thefulldepth.hashnode.dev/)
 [![Medium](https://img.shields.io/badge/Medium-18181B?style=flat-square&logo=medium&logoColor=white)](https://manojpisini.medium.com/)
 [![Substack](https://img.shields.io/badge/Substack-18181B?style=flat-square&logo=substack&logoColor=FF6719)](https://manojpisini.substack.com/)
+[![Dev.to](https://img.shields.io/badge/Dev.to-18181B?style=flat-square&logo=devdotto&logoColor=white)](https://dev.to/manojpisini)
 
 
 *I write code from the browser to the bare metal — and then write about it.*
