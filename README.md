@@ -32,8 +32,6 @@ Outside engineering, I study **mathematics, physics, economics, finance, and man
 ---
 
 ## Tech Stack
-  
-## Tech Stack
 
 <div align="center">
 
