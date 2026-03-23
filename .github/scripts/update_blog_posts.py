@@ -39,9 +39,17 @@ GITHUB_BLOG = {
 
 MAX_POSTS = 5
 
-# Fixed banner dimensions rendered in the README
 BANNER_WIDTH  = "100%"
 BANNER_HEIGHT = "120"
+
+# Browsers-like User-Agent so RSS hosts don't block GitHub Actions IPs
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (X11; Linux x86_64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/122.0.0.0 Safari/537.36"
+    )
+}
 
 
 def parse_rss_date(entry):
@@ -68,10 +76,14 @@ def get_rss_banner(entry):
     media = entry.get("media_thumbnail") or entry.get("media_content")
     if media and isinstance(media, list) and media[0].get("url"):
         return media[0]["url"]
-    # 2. enclosures
+    # 2. enclosures — accept any URL ending in an image extension,
+    #    because Hashnode sets type="image/jpeg" even for .png files
+    #    and feedparser sometimes parses the type field as empty.
     for enc in entry.get("enclosures", []):
-        if enc.get("type", "").startswith("image/"):
-            return enc.get("url")
+        url  = enc.get("url", "")
+        mime = enc.get("type", "")
+        if mime.startswith("image/") or re.search(r'\.(png|jpe?g|webp|gif)(\?|$)', url, re.I):
+            return url
     # 3. First <img> in summary or content body
     for field in ("summary", "content"):
         val = entry.get(field)
@@ -107,32 +119,62 @@ def build_capsule_banner(title, source, date_str):
 
 
 def fetch_rss_posts():
+    """
+    Fetch each RSS feed using requests (so we control headers and can
+    inspect the HTTP status code), then hand the raw XML to feedparser.
+    feedparser.parse() never raises on network errors — it just returns
+    an empty feed — so fetching with requests first lets us log exactly
+    what went wrong per source.
+    """
     posts = []
     for source in RSS_FEEDS:
+        name = source["name"]
+        url  = source["url"]
         try:
-            feed = feedparser.parse(source["url"])
+            # Step 1: fetch the raw XML ourselves so we can check status
+            resp = requests.get(url, headers=HEADERS, timeout=15)
+            print(f"  {name}: HTTP {resp.status_code} ({len(resp.content)} bytes)")
+            if resp.status_code != 200:
+                print(f"  {name}: skipping — non-200 response")
+                continue
+
+            # Step 2: parse with feedparser using the already-fetched content
+            feed = feedparser.parse(resp.content)
+
+            if feed.bozo:
+                # bozo=True means feedparser hit a parse warning/error.
+                # It often still returns entries, so we continue but log it.
+                print(f"  {name}: parse warning — {feed.bozo_exception}")
+
+            entry_count = len(feed.entries)
+            print(f"  {name}: {entry_count} entries found")
+
             for entry in feed.entries:
                 date = parse_rss_date(entry)
                 posts.append({
-                    "title":       entry.get("title", "Untitled").strip(),
-                    "url":         entry.get("link", "#"),
-                    "date":        date,
-                    "date_str":    date.strftime("%b %d, %Y"),
-                    "source_name": source["name"],
+                    "title":        entry.get("title", "Untitled").strip(),
+                    "url":          entry.get("link", "#"),
+                    "date":         date,
+                    "date_str":     date.strftime("%b %d, %Y"),
+                    "source_name":  name,
                     "source_badge": source["badge"],
-                    "banner":      get_rss_banner(entry),
+                    "banner":       get_rss_banner(entry),
                 })
+
         except Exception as e:
-            print(f"Failed to fetch {source['name']}: {e}")
+            print(f"  {name}: FAILED — {e}")
+
     return posts
 
 
 def fetch_github_blog_posts():
     posts = []
     try:
-        resp = requests.get(GITHUB_BLOG["manifest_url"], timeout=10)
+        resp = requests.get(GITHUB_BLOG["manifest_url"], headers=HEADERS, timeout=10)
+        print(f"  GitHub Blog: HTTP {resp.status_code}")
         resp.raise_for_status()
         entries = resp.json()
+        print(f"  GitHub Blog: {len(entries)} entries found")
         for entry in entries:
             slug  = entry.get("file", "").replace(".md", "")
             url   = f"{GITHUB_BLOG['base_url']}{slug}"
@@ -145,16 +187,19 @@ def fetch_github_blog_posts():
                 "date_str":     date.strftime("%b %d, %Y"),
                 "source_name":  GITHUB_BLOG["name"],
                 "source_badge": GITHUB_BLOG["badge"],
-                # Use "banner" key in manifest.json if present
                 "banner":       entry.get("banner") or None,
             })
     except Exception as e:
-        print(f"Failed to fetch GitHub Blog manifest: {e}")
+        print(f"  GitHub Blog: FAILED — {e}")
     return posts
 
 
 def fetch_all_posts():
-    posts = fetch_rss_posts() + fetch_github_blog_posts()
+    print("--- Fetching RSS feeds ---")
+    rss   = fetch_rss_posts()
+    print("--- Fetching GitHub Blog manifest ---")
+    gh    = fetch_github_blog_posts()
+    posts = rss + gh
     posts.sort(key=lambda p: p["date"], reverse=True)
     return posts[:MAX_POSTS]
 
@@ -167,13 +212,9 @@ def build_markdown(posts):
     for p in posts:
         title = p["title"]
         url   = p["url"]
-        badge = p["source_badge"]
         date  = p["date_str"]
 
         if p.get("banner"):
-            # Post's own cover image — fixed width + height so all banners
-            # are uniform regardless of the original image dimensions.
-            # object-fit:cover crops rather than squishes.
             img_tag = (
                 f'<img src="{p["banner"]}" '
                 f'width="{BANNER_WIDTH}" height="{BANNER_HEIGHT}" '
@@ -181,8 +222,6 @@ def build_markdown(posts):
                 f'alt="{title}">'
             )
         else:
-            # Capsule-render fallback — capsule already outputs at the
-            # correct height, so no object-fit needed.
             capsule_url = build_capsule_banner(title, p["source_name"], date)
             img_tag = (
                 f'<img src="{capsule_url}" '
@@ -190,11 +229,7 @@ def build_markdown(posts):
                 f'alt="{title}">'
             )
 
-        # Wrap image in a link so clicking opens the post
-        banner_block = f'<a href="{url}">{img_tag}</a>'
-
-        block = banner_block
-        blocks.append(block)
+        blocks.append(f'<a href="{url}">{img_tag}</a>')
 
     return "\n\n".join(blocks) + "\n"
 
@@ -202,6 +237,12 @@ def build_markdown(posts):
 def update_readme(content):
     with open("README.md", "r", encoding="utf-8") as f:
         readme = f.read()
+
+    if "<!-- BLOG-POST-LIST:START -->" not in readme:
+        raise RuntimeError(
+            "README.md is missing <!-- BLOG-POST-LIST:START --> marker. "
+            "Add it where you want the posts to appear."
+        )
 
     new_section = (
         f"<!-- BLOG-POST-LIST:START -->\n{content}<!-- BLOG-POST-LIST:END -->"
@@ -222,7 +263,7 @@ def update_readme(content):
 
 if __name__ == "__main__":
     posts = fetch_all_posts()
-    print(f"Fetched {len(posts)} posts total.")
+    print(f"\nFetched {len(posts)} posts total.")
     for p in posts:
         src = "post banner" if p.get("banner") else "capsule-render"
         print(f"  [{p['source_name']}] {p['title']} ({p['date_str']}) — {src}")
