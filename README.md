@@ -25,15 +25,20 @@ Outside engineering, I study **mathematics, physics, economics, finance, and man
 
 ## Writing & Content
 
+<div align="center">
+  
 [![GitHub Blog](https://img.shields.io/badge/GitHub_Blog-18181B?style=flat-square&logo=github&logoColor=white)](https://manojpisini.github.io/blog.html)
 [![Hashnode](https://img.shields.io/badge/Hashnode-18181B?style=flat-square&logo=hashnode&logoColor=2962FF)](https://manojpisini.hashnode.dev/)
 [![Medium](https://img.shields.io/badge/Medium-18181B?style=flat-square&logo=medium&logoColor=white)](https://manojpisini.medium.com/)
 [![Substack](https://img.shields.io/badge/Substack-18181B?style=flat-square&logo=substack&logoColor=FF6719)](https://manojpisini.substack.com/)
+</div>
 
 ---
 
 ## Tech Stack
 
+<div align="center">
+  
 > **Core Languages**
 > 
 > ![C](https://img.shields.io/badge/C-18181B?style=flat-square&logo=c&logoColor=white)
@@ -88,6 +93,8 @@ Outside engineering, I study **mathematics, physics, economics, finance, and man
 > ![Blender](https://img.shields.io/badge/Blender-18181B?style=flat-square&logo=blender&logoColor=F5792A)
 > ![Adobe XD](https://img.shields.io/badge/Adobe_XD-18181B?style=flat-square&logo=adobexd&logoColor=FF61F6)
 > ![Canva](https://img.shields.io/badge/Canva-18181B?style=flat-square&logo=canva&logoColor=00C4CC)
+
+</div>
 
 ---
 
