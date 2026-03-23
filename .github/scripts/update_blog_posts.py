@@ -9,7 +9,7 @@ from email.utils import parsedate_to_datetime
 RSS_FEEDS = [
     {
         "name": "Hashnode",
-        "url": "https://manojpisini.hashnode.dev/rss.xml",
+        "url": "https://thefulldepth.hashnode.dev/rss.xml",
         "badge": "![Hashnode](https://img.shields.io/badge/Hashnode-18181B?style=flat-square&logo=hashnode&logoColor=2962FF)",
     },
     {
