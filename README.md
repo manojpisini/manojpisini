@@ -6,7 +6,6 @@
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-manojpisini.dev-18181B?style=flat-square&logo=vercel&logoColor=white)](https://manojpisini.github.io)
 [![Email](https://img.shields.io/badge/Email-manojpisini.dev@gmail.com-18181B?style=flat-square&logo=gmail&logoColor=white)](mailto:manojpisini.dev@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-manoj--pisini-18181B?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/manoj-pisini)
 
 *I write code from the browser to the bare metal — and then write about it.*
 
