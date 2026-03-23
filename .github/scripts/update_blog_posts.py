@@ -41,7 +41,7 @@ MAX_POSTS = 5
 
 # Fixed banner dimensions rendered in the README
 BANNER_WIDTH  = "100%"
-BANNER_HEIGHT = "200"
+BANNER_HEIGHT = "120"
 
 
 def parse_rss_date(entry):
@@ -196,7 +196,7 @@ def build_markdown(posts):
         block = banner_block
         blocks.append(block)
 
-    return "\n\n&nbsp;\n\n".join(blocks) + "\n"
+    return "\n\n".join(blocks) + "\n"
 
 
 def update_readme(content):
