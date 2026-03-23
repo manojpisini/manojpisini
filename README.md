@@ -123,6 +123,14 @@ Outside engineering, I study **mathematics, physics, economics, finance, and man
 ## Latest Posts
 
 <!-- BLOG-POST-LIST:START -->
+> **[Our IDEs Are Quietly Failing Us — And We Normalized It](https://dev.to/manojpisini/our-ides-are-quietly-failing-us-and-we-normalized-it-178o)**  
+> ![Dev.to](https://img.shields.io/badge/Dev.to-18181B?style=flat-square&logo=devdotto&logoColor=white) &nbsp; `Mar 22, 2026`
+
+> **[5 Things That Broke My Real-Time Robotics Positioning System (And What I Actually Did About It)](https://dev.to/manojpisini/5-things-that-broke-my-real-time-robotics-positioning-system-and-what-i-actually-did-about-it-24i8)**  
+> ![Dev.to](https://img.shields.io/badge/Dev.to-18181B?style=flat-square&logo=devdotto&logoColor=white) &nbsp; `Mar 12, 2026`
+
+> **[MARKDOWN_PROTOCOL_SHOWCASE](https://manojpisini.github.io/blog/markdown-showcase)**  
+> ![GitHub Blog](https://img.shields.io/badge/GitHub_Blog-18181B?style=flat-square&logo=github&logoColor=white) &nbsp; `Mar 12, 2026`
 <!-- BLOG-POST-LIST:END -->
 
 ---
