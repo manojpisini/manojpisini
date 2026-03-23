@@ -33,60 +33,16 @@ Outside engineering, I study **mathematics, physics, economics, finance, and man
 
 ## Tech Stack
   
-> **Core Languages**
-> 
-> ![C](https://img.shields.io/badge/C-18181B?style=flat-square&logo=c&logoColor=white)
-> ![C++](https://img.shields.io/badge/C++-18181B?style=flat-square&logo=cplusplus&logoColor=white)
-> ![Rust](https://img.shields.io/badge/Rust-18181B?style=flat-square&logo=rust&logoColor=white)
-> ![Go](https://img.shields.io/badge/Go-18181B?style=flat-square&logo=go&logoColor=white)
-> ![Python](https://img.shields.io/badge/Python-18181B?style=flat-square&logo=python&logoColor=white)
-> ![TypeScript](https://img.shields.io/badge/TypeScript-18181B?style=flat-square&logo=typescript&logoColor=white)
-> ![JavaScript](https://img.shields.io/badge/JavaScript-18181B?style=flat-square&logo=javascript&logoColor=white)
-> ![Java](https://img.shields.io/badge/Java-18181B?style=flat-square&logo=openjdk&logoColor=white)
-> ![.NET](https://img.shields.io/badge/.NET-18181B?style=flat-square&logo=dotnet&logoColor=white)
+## Tech Stack
 
-> **Frontend**
-> 
-> ![React](https://img.shields.io/badge/React-18181B?style=flat-square&logo=react&logoColor=61DAFB)
-> ![Next.js](https://img.shields.io/badge/Next.js-18181B?style=flat-square&logo=next.js&logoColor=white)
-> ![Angular](https://img.shields.io/badge/Angular-18181B?style=flat-square&logo=angular&logoColor=DD0031)
-> ![TailwindCSS](https://img.shields.io/badge/Tailwind-18181B?style=flat-square&logo=tailwindcss&logoColor=38B2AC)
-> ![shadcn/ui](https://img.shields.io/badge/shadcn/ui-18181B?style=flat-square&logo=shadcnui&logoColor=white)
-> ![Material UI](https://img.shields.io/badge/MUI-18181B?style=flat-square&logo=mui&logoColor=007FFF)
-
-> **Backend & AI**
-> 
-> ![Django](https://img.shields.io/badge/Django-18181B?style=flat-square&logo=django&logoColor=white)
-> ![Flask](https://img.shields.io/badge/Flask-18181B?style=flat-square&logo=flask&logoColor=white)
-> ![FastAPI](https://img.shields.io/badge/FastAPI-18181B?style=flat-square&logo=fastapi&logoColor=009688)
-> ![Node.js](https://img.shields.io/badge/Node.js-18181B?style=flat-square&logo=node.js&logoColor=339933)
-> ![Express](https://img.shields.io/badge/Express-18181B?style=flat-square&logo=express&logoColor=white)
-> ![gRPC](https://img.shields.io/badge/gRPC-18181B?style=flat-square&logo=grpc&logoColor=white)
-> ![TensorFlow](https://img.shields.io/badge/TensorFlow-18181B?style=flat-square&logo=tensorflow&logoColor=FF6F00)
-> ![scikit-learn](https://img.shields.io/badge/scikit--learn-18181B?style=flat-square&logo=scikit-learn&logoColor=F7931E)
-
-> **Cloud, DevOps & Infra**
-> 
-> ![Docker](https://img.shields.io/badge/Docker-18181B?style=flat-square&logo=docker&logoColor=2496ED)
-> ![Kubernetes](https://img.shields.io/badge/Kubernetes-18181B?style=flat-square&logo=kubernetes&logoColor=326CE5)
-> ![Linux](https://img.shields.io/badge/Linux-18181B?style=flat-square&logo=linux&logoColor=FCC624)
-> ![AWS](https://img.shields.io/badge/AWS-18181B?style=flat-square&logo=amazon-aws&logoColor=FF9900)
-> ![GCP](https://img.shields.io/badge/GCP-18181B?style=flat-square&logo=google-cloud&logoColor=4285F4)
-> ![CI/CD](https://img.shields.io/badge/CI/CD-18181B?style=flat-square&logo=githubactions&logoColor=white)
-
-> **Databases**
-> 
-> ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-18181B?style=flat-square&logo=postgresql&logoColor=4169E1)
-> ![MongoDB](https://img.shields.io/badge/MongoDB-18181B?style=flat-square&logo=mongodb&logoColor=47A248)
-> ![Redis](https://img.shields.io/badge/Redis-18181B?style=flat-square&logo=redis&logoColor=DC382D)
-> ![SQL](https://img.shields.io/badge/SQL-18181B?style=flat-square&logo=sqlite&logoColor=white)
-
-> **Design & Creative**
-> 
-> ![Figma](https://img.shields.io/badge/Figma-18181B?style=flat-square&logo=figma&logoColor=F24E1E)
-> ![Blender](https://img.shields.io/badge/Blender-18181B?style=flat-square&logo=blender&logoColor=F5792A)
-> ![Adobe XD](https://img.shields.io/badge/Adobe_XD-18181B?style=flat-square&logo=adobexd&logoColor=FF61F6)
-> ![Canva](https://img.shields.io/badge/Canva-18181B?style=flat-square&logo=canva&logoColor=00C4CC)
+| Category | Badges |
+|---|---|
+| **Core Languages** | ![C](https://img.shields.io/badge/C-18181B?style=flat-square&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/C++-18181B?style=flat-square&logo=cplusplus&logoColor=white) ![Rust](https://img.shields.io/badge/Rust-18181B?style=flat-square&logo=rust&logoColor=white) ![Go](https://img.shields.io/badge/Go-18181B?style=flat-square&logo=go&logoColor=white) ![Python](https://img.shields.io/badge/Python-18181B?style=flat-square&logo=python&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-18181B?style=flat-square&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-18181B?style=flat-square&logo=javascript&logoColor=white) ![Java](https://img.shields.io/badge/Java-18181B?style=flat-square&logo=openjdk&logoColor=white) ![.NET](https://img.shields.io/badge/.NET-18181B?style=flat-square&logo=dotnet&logoColor=white) |
+| **Frontend** | ![React](https://img.shields.io/badge/React-18181B?style=flat-square&logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/Next.js-18181B?style=flat-square&logo=next.js&logoColor=white) ![Angular](https://img.shields.io/badge/Angular-18181B?style=flat-square&logo=angular&logoColor=DD0031) ![TailwindCSS](https://img.shields.io/badge/Tailwind-18181B?style=flat-square&logo=tailwindcss&logoColor=38B2AC) ![shadcn/ui](https://img.shields.io/badge/shadcn/ui-18181B?style=flat-square&logo=shadcnui&logoColor=white) ![Material UI](https://img.shields.io/badge/MUI-18181B?style=flat-square&logo=mui&logoColor=007FFF) |
+| **Backend & AI** | ![Django](https://img.shields.io/badge/Django-18181B?style=flat-square&logo=django&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-18181B?style=flat-square&logo=flask&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-18181B?style=flat-square&logo=fastapi&logoColor=009688) ![Node.js](https://img.shields.io/badge/Node.js-18181B?style=flat-square&logo=node.js&logoColor=339933) ![Express](https://img.shields.io/badge/Express-18181B?style=flat-square&logo=express&logoColor=white) ![gRPC](https://img.shields.io/badge/gRPC-18181B?style=flat-square&logo=grpc&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-18181B?style=flat-square&logo=tensorflow&logoColor=FF6F00) ![scikit-learn](https://img.shields.io/badge/scikit--learn-18181B?style=flat-square&logo=scikit-learn&logoColor=F7931E) |
+| **Cloud, DevOps & Infra** | ![Docker](https://img.shields.io/badge/Docker-18181B?style=flat-square&logo=docker&logoColor=2496ED) ![Kubernetes](https://img.shields.io/badge/Kubernetes-18181B?style=flat-square&logo=kubernetes&logoColor=326CE5) ![Linux](https://img.shields.io/badge/Linux-18181B?style=flat-square&logo=linux&logoColor=FCC624) ![AWS](https://img.shields.io/badge/AWS-18181B?style=flat-square&logo=amazon-aws&logoColor=FF9900) ![GCP](https://img.shields.io/badge/GCP-18181B?style=flat-square&logo=google-cloud&logoColor=4285F4) ![CI/CD](https://img.shields.io/badge/CI/CD-18181B?style=flat-square&logo=githubactions&logoColor=white) |
+| **Databases** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-18181B?style=flat-square&logo=postgresql&logoColor=4169E1) ![MongoDB](https://img.shields.io/badge/MongoDB-18181B?style=flat-square&logo=mongodb&logoColor=47A248) ![Redis](https://img.shields.io/badge/Redis-18181B?style=flat-square&logo=redis&logoColor=DC382D) ![SQL](https://img.shields.io/badge/SQL-18181B?style=flat-square&logo=sqlite&logoColor=white) |
+| **Design & Creative** | ![Figma](https://img.shields.io/badge/Figma-18181B?style=flat-square&logo=figma&logoColor=F24E1E) ![Blender](https://img.shields.io/badge/Blender-18181B?style=flat-square&logo=blender&logoColor=F5792A) ![Adobe XD](https://img.shields.io/badge/Adobe_XD-18181B?style=flat-square&logo=adobexd&logoColor=FF61F6) ![Illustrator](https://img.shields.io/badge/Illustrator-18181B?style=flat-square&logo=adobeillustrator&logoColor=FF9A00) ![Photoshop](https://img.shields.io/badge/Photoshop-18181B?style=flat-square&logo=adobephotoshop&logoColor=31A8FF) |
 
 ---
 
@@ -110,9 +66,7 @@ Outside engineering, I study **mathematics, physics, economics, finance, and man
     </td>
   </tr>
 </table>
-<!-- <div align="center">
-  <img width="100%" src="https://github-profile-trophy.vercel.app/?username=manojpisini&theme=darkhub&no-bg=false&no-frame=false&column=7&margin-w=8&margin-h=8&rank=SECRET,SSS,SS,S,AAA,AA,A,B,C" />
-</div> -->
+
 
 ---
 
