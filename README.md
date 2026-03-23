@@ -2,7 +2,7 @@
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:18181B,100:27272A&height=120&section=header&text=Manoj+Pisini&fontSize=52&fontColor=ffffff&fontAlignY=70&fontAlign=50" />
 
-### **Full-Stack · Systems · Embedded · ML · DevOps**
+### **Full-Stack · Systems · Embedded · AI/ML · DevOps**
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-manojpisini.dev-18181B?style=flat-square&logo=vercel&logoColor=white)](https://manojpisini.github.io)
 [![Email](https://img.shields.io/badge/Email-manojpisini.dev@gmail.com-18181B?style=flat-square&logo=gmail&logoColor=white)](mailto:manojpisini.dev@gmail.com)
