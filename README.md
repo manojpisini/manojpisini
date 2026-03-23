@@ -10,7 +10,7 @@
 ### **_Writing & Content_**
 
 [![GitHub Blog](https://img.shields.io/badge/GitHub_Blog-18181B?style=flat-square&logo=github&logoColor=white)](https://manojpisini.github.io/blog.html)
-[![Hashnode](https://img.shields.io/badge/Hashnode-18181B?style=flat-square&logo=hashnode&logoColor=2962FF)](https://manojpisini.hashnode.dev/)
+[![Hashnode](https://img.shields.io/badge/Hashnode-18181B?style=flat-square&logo=hashnode&logoColor=2962FF)](https://thefulldepth.hashnode.dev/)
 [![Medium](https://img.shields.io/badge/Medium-18181B?style=flat-square&logo=medium&logoColor=white)](https://manojpisini.medium.com/)
 [![Substack](https://img.shields.io/badge/Substack-18181B?style=flat-square&logo=substack&logoColor=FF6719)](https://manojpisini.substack.com/)
 
