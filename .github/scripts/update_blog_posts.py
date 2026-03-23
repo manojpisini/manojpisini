@@ -36,7 +36,7 @@ GITHUB_BLOG = {
     "badge": "![GitHub Blog](https://img.shields.io/badge/GitHub_Blog-18181B?style=flat-square&logo=github&logoColor=white)",
 }
 
-MAX_POSTS = 8
+MAX_POSTS = 5
 
 
 def parse_rss_date(entry):
