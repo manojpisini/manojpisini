@@ -36,8 +36,6 @@ Outside engineering, I study **mathematics, physics, economics, finance, and man
 ---
 
 ## Tech Stack
-
-<div align="center">
   
 > **Core Languages**
 > 
@@ -93,8 +91,6 @@ Outside engineering, I study **mathematics, physics, economics, finance, and man
 > ![Blender](https://img.shields.io/badge/Blender-18181B?style=flat-square&logo=blender&logoColor=F5792A)
 > ![Adobe XD](https://img.shields.io/badge/Adobe_XD-18181B?style=flat-square&logo=adobexd&logoColor=FF61F6)
 > ![Canva](https://img.shields.io/badge/Canva-18181B?style=flat-square&logo=canva&logoColor=00C4CC)
-
-</div>
 
 ---
 
