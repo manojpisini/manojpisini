@@ -123,18 +123,15 @@ Outside engineering, I study **mathematics, physics, economics, finance, and man
 ## Latest Posts
 
 <!-- BLOG-POST-LIST:START -->
-[![Our IDEs Are Quietly Failing Us — And We Normalized It](https://capsule-render.vercel.app/api?type=waving&color=0%3A18181B%2C100%3A27272A&height=130&section=header&text=Our+IDEs+Are+Quietly+Failing+Us+%E2%80%94+And+We+...&fontSize=24&fontColor=ffffff&fontAlignY=42&fontAlign=50&desc=Dev.to++%C2%B7++Mar+22%2C+2026&descSize=14&descColor=a1a1aa&descAlignY=65&descAlign=50)](https://dev.to/manojpisini/our-ides-are-quietly-failing-us-and-we-normalized-it-178o)
-> ![Dev.to](https://img.shields.io/badge/Dev.to-18181B?style=flat-square&logo=devdotto&logoColor=white) &nbsp; `Mar 22, 2026` &nbsp; &nbsp; **[Read →](https://dev.to/manojpisini/our-ides-are-quietly-failing-us-and-we-normalized-it-178o)**
+<a href="https://dev.to/manojpisini/our-ides-are-quietly-failing-us-and-we-normalized-it-178o"><img src="https://capsule-render.vercel.app/api?type=rect&color=0%3A18181B%2C100%3A27272A&height=200&text=Our+IDEs+Are+Quietly+Failing+Us+%E2%80%94+And+We+...&fontSize=24&fontColor=ffffff&fontAlignY=42&fontAlign=50&desc=Dev.to++%C2%B7++Mar+22%2C+2026&descSize=14&descColor=a1a1aa&descAlignY=65&descAlign=50" width="830" height="200" alt="Our IDEs Are Quietly Failing Us — And We Normalized It"></a>
 
-<br>
+&nbsp;
 
-[![5 Things That Broke My Real-Time Robotics Positioning System (And What I Actually Did About It)](https://capsule-render.vercel.app/api?type=waving&color=0%3A18181B%2C100%3A27272A&height=130&section=header&text=5+Things+That+Broke+My+Real-Time+Robotics...&fontSize=24&fontColor=ffffff&fontAlignY=42&fontAlign=50&desc=Dev.to++%C2%B7++Mar+12%2C+2026&descSize=14&descColor=a1a1aa&descAlignY=65&descAlign=50)](https://dev.to/manojpisini/5-things-that-broke-my-real-time-robotics-positioning-system-and-what-i-actually-did-about-it-24i8)
-> ![Dev.to](https://img.shields.io/badge/Dev.to-18181B?style=flat-square&logo=devdotto&logoColor=white) &nbsp; `Mar 12, 2026` &nbsp; &nbsp; **[Read →](https://dev.to/manojpisini/5-things-that-broke-my-real-time-robotics-positioning-system-and-what-i-actually-did-about-it-24i8)**
+<a href="https://dev.to/manojpisini/5-things-that-broke-my-real-time-robotics-positioning-system-and-what-i-actually-did-about-it-24i8"><img src="https://capsule-render.vercel.app/api?type=rect&color=0%3A18181B%2C100%3A27272A&height=200&text=5+Things+That+Broke+My+Real-Time+Robotics...&fontSize=24&fontColor=ffffff&fontAlignY=42&fontAlign=50&desc=Dev.to++%C2%B7++Mar+12%2C+2026&descSize=14&descColor=a1a1aa&descAlignY=65&descAlign=50" width="830" height="200" alt="5 Things That Broke My Real-Time Robotics Positioning System (And What I Actually Did About It)"></a>
 
-<br>
+&nbsp;
 
-[![MARKDOWN_PROTOCOL_SHOWCASE](https://capsule-render.vercel.app/api?type=waving&color=0%3A18181B%2C100%3A27272A&height=130&section=header&text=MARKDOWN_PROTOCOL_SHOWCASE&fontSize=24&fontColor=ffffff&fontAlignY=42&fontAlign=50&desc=GitHub+Blog++%C2%B7++Mar+12%2C+2026&descSize=14&descColor=a1a1aa&descAlignY=65&descAlign=50)](https://manojpisini.github.io/blog/markdown-showcase)
-> ![GitHub Blog](https://img.shields.io/badge/GitHub_Blog-18181B?style=flat-square&logo=github&logoColor=white) &nbsp; `Mar 12, 2026` &nbsp; &nbsp; **[Read →](https://manojpisini.github.io/blog/markdown-showcase)**
+<a href="https://manojpisini.github.io/blog/markdown-showcase"><img src="https://capsule-render.vercel.app/api?type=rect&color=0%3A18181B%2C100%3A27272A&height=200&text=MARKDOWN_PROTOCOL_SHOWCASE&fontSize=24&fontColor=ffffff&fontAlignY=42&fontAlign=50&desc=GitHub+Blog++%C2%B7++Mar+12%2C+2026&descSize=14&descColor=a1a1aa&descAlignY=65&descAlign=50" width="830" height="200" alt="MARKDOWN_PROTOCOL_SHOWCASE"></a>
 <!-- BLOG-POST-LIST:END -->
 
 ---
