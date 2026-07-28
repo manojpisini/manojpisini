@@ -1,38 +1,38 @@
-name: Update Latest Blog Posts
+# name: Update Latest Blog Posts
 
-on:
-  schedule:
-    - cron: "0 */1 * * *"
-  workflow_dispatch:
+# on:
+#   schedule:
+#     - cron: "0 */1 * * *"
+#   workflow_dispatch:
 
-permissions:
-  contents: write
+# permissions:
+#   contents: write
 
-jobs:
-  update-readme:
-    name: Fetch and update blog posts in README
-    runs-on: ubuntu-latest
+# jobs:
+#   update-readme:
+#     name: Fetch and update blog posts in README
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+#     steps:
+#       - name: Checkout repo
+#         uses: actions/checkout@v3
+#         with:
+#           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.11"
+#       - name: Set up Python
+#         uses: actions/setup-python@v4
+#         with:
+#           python-version: "3.11"
 
-      - name: Install dependencies
-        run: pip install feedparser requests
+#       - name: Install dependencies
+#         run: pip install feedparser requests
 
-      - name: Fetch blog posts and update README
-        run: python .github/scripts/update_blog_posts.py
+#       - name: Fetch blog posts and update README
+#         run: python .github/scripts/update_blog_posts.py
 
-      - name: Commit changes
-        run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git diff --quiet && git diff --staged --quiet || (git add README.md && git commit -m "chore: update latest blog posts [skip ci]")
-          git push
+#       - name: Commit changes
+#         run: |
+#           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+#           git config --local user.name "github-actions[bot]"
+#           git diff --quiet && git diff --staged --quiet || (git add README.md && git commit -m "chore: update latest blog posts [skip ci]")
+#           git push
